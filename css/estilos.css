@@ -1,0 +1,128 @@
+body {
+	font-family: Dancing Script;
+	background-color: black;
+}
+/*animacion slide in*/
+header{
+	animation: header 1.5s;
+}
+@-webkit-keyframes header{
+	0%{
+		margin-top:150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+/*encabezado*/
+a {
+	color:white;
+	float: right;
+	text-decoration:none;
+	text-align: center;
+	margin-right: 30px
+}
+h1{
+	text-align: right;
+	color:white;
+}
+.c1 {
+  color:white;
+	padding: 2%;
+  text-align: center;
+	background-color: #5b7989;
+	border-top-left-radius: 10px;
+	border-top-right-radius:10px;
+}
+/*Animación, efectos y tamoño de imagenes*/
+figure #imagen1,#imagen2,#imagen3 {
+text-align: center;
+-webkit-filter:drop-shadow(2px 2px 2px #02010a);
+filter:drop-shadow(2px 2px 2px #02010a);
+}
+
+img{
+	width: 80%;
+ }
+
+}
+#imagen2 img:hover {
+ transform: rotate(10deg);
+}
+#imagen3 img:hover {
+ transform: translate(20px, 5px);
+}
+#imagen4 img{
+	width: 15%;
+	text-align: left;
+}
+/*contenedores con imagenes*/
+.c2  {
+	background-color: #82c3a6;
+	width: 50%;
+  text-align: center;
+}
+.c3 {
+background-color: #d5c75f;
+width: 100%;
+border:1px;
+}
+.c4 {
+	background-color:  #d5c75f;
+	width: 100%;
+	border:1px;
+		}
+/*pie de pagina*/
+.c5{
+	border-bottom-left-radius: 10px;
+}
+.c5, .c6, .c7, .c8 {
+background-color:  #C6d5c5;
+color: black;
+text-align: left;
+}
+.c7 figure{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.c8 {
+	border-bottom-right-radius: 10px;
+}
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	}
+
+/*--estilo para moviles-->*/
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8 {
+width: 100%;
+}
+
+/*estilo para desktop colocando c1 al 100%, c2 al 100% y el resto a 25%*/
+@media (min-width: 800px) {
+.c1 {
+width: 100%;
+}
+.c2 {
+width: 100%;
+}
+.c3, .c4 {
+width: 50%;
+}
+
+.c5, .c6, .c7, .c8 {
+width: 25%;
+}
+.container {
+width: 900px;
+margin-left: auto;
+margin-right: auto;
+color:white;
+text-align: center;
+}
